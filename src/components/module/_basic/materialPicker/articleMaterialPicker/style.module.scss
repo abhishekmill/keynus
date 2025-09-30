@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-fit overflow-x-auto grid grid-flow-col grid-rows-2 gap-8 py-8;
+
+  .button {
+    @apply relative w-46 h-46 rounded-md overflow-hidden;
+
+    &.active {
+      @apply border-2 border-primary;
+    }
+
+    .image {
+      @apply object-cover;
+    }
+  }
+}

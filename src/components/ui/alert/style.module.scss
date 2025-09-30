@@ -1,0 +1,14 @@
+.wrapper {
+  @apply w-full p-16 rounded-lg text-white;
+
+  &.warn {
+  }
+
+  &.error {
+    @apply bg-danger;
+  }
+
+  &.sucess {
+    @apply bg-primary;
+  }
+}

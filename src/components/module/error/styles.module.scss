@@ -1,0 +1,23 @@
+.wrapper {
+  @apply flex items-center justify-center w-screen h-[calc(100vh-54px)] overflow-hidden;
+
+  .content {
+    @apply text-center flex flex-col justify-center gap-20;
+
+    .heading {
+      @apply text-45 font-bold text-primary;
+    }
+
+    .description {
+      @apply text-24;
+    }
+
+    .linkWrapper {
+      @apply flex items-center justify-center;
+
+      a {
+        @apply no-underline;
+      }
+    }
+  }
+}

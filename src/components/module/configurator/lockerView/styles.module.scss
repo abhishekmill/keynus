@@ -1,0 +1,7 @@
+.wrapper {
+  @apply relative h-full w-full;
+
+  .loadingWrapper {
+    @apply absolute inset-0 w-screen h-[calc(100vh-54px)] block z-60;
+  }
+}

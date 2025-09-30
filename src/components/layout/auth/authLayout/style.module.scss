@@ -1,0 +1,24 @@
+.wrapper {
+  @apply w-screen h-screen flex flex-col items-center justify-center overflow-x-hidden overflow-y-auto;
+  background: linear-gradient(270deg, #444444 0%, #37393a 33.33%);
+
+  .content {
+    @apply flex items-center justify-between gap-40 w-full h-full;
+
+    .logoWrapper {
+      @apply pl-40 hidden tablet:block;
+    }
+
+    .formWrapper {
+      @apply w-full h-full max-w-645 relative;
+
+      .patternWrapper {
+        @apply hidden tablet:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-screen w-fit py-40 max-h-1100;
+      }
+
+      .form {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-450 w-full  z-40;
+      }
+    }
+  }
+}

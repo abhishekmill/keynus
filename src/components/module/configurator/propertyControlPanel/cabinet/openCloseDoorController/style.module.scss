@@ -1,0 +1,7 @@
+.openToggle {
+  @apply flex items-center justify-between pb-8;
+
+  .label {
+    @apply text-12 pb-4 font-bold;
+  }
+}

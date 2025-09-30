@@ -1,0 +1,34 @@
+.wrapper {
+  @apply h-180 max-w-180 w-full bg-primary rounded-lg p-10;
+
+  &.horizontalWrapper {
+    @apply bg-black;
+  }
+
+  .selection {
+    @apply flex items-center gap-15 pl-5;
+
+    .input {
+      @apply size-15 marker:flex-none bg-black outline outline-2 outline-offset-2 outline-white appearance-none w-10 h-10 border-none rounded-full cursor-pointer;
+
+      &:checked {
+        @apply bg-white;
+      }
+    }
+
+    .label {
+      @apply text-white text-20 h-24;
+    }
+  }
+
+  .imageContent {
+    @apply px-20 py-5;
+    .image {
+      @apply w-full aspect-square text-primary;
+
+      &.activeImage {
+        @apply text-black;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.wrapper {
+  @apply w-full min-w-710;
+
+  .tHeader {
+    @apply bg-gray grid grid-cols-12;
+
+    .th {
+      @apply p-12 truncate whitespace-nowrap;
+
+      &.span1 {
+        @apply col-span-1;
+      }
+      &.span2 {
+        @apply col-span-2;
+      }
+      &.span3 {
+        @apply col-span-3;
+      }
+      &.span4 {
+        @apply col-span-4;
+      }
+    }
+  }
+
+  .tr {
+    @apply grid grid-cols-12 border-b border-gray w-full text-left outline-none right-0 hover:bg-[#f7f7f7];
+
+    .td {
+      @apply px-12 py-16 flex-nowrap truncate;
+
+      &.span1 {
+        @apply col-span-1;
+      }
+      &.span2 {
+        @apply col-span-2;
+      }
+      &.span3 {
+        @apply col-span-3;
+      }
+      &.span4 {
+        @apply col-span-4;
+      }
+    }
+  }
+}

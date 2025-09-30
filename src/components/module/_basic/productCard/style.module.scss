@@ -1,0 +1,23 @@
+.wrapper {
+  position: relative;
+  border-radius: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  padding: 1rem;
+
+  &.default {
+    border: 1px solid #d1d5db; // equivalent to Tailwind's border-gray-300
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .label {
+    font-weight: 600;
+    color: #374151; // equivalent to Tailwind's text-gray-700
+  }
+}

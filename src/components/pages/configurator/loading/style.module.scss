@@ -1,0 +1,23 @@
+.wrapper {
+  @apply w-full h-full absolute inset-0 bg-white z-50 flex items-center justify-center;
+
+  .content {
+    @apply flex items-center justify-center flex-col gap-60 w-full px-32;
+
+    .logoWrapper {
+      @apply relative;
+
+      .loader {
+        @apply w-[225px] h-[100px];
+      }
+    }
+
+    .message {
+      @apply text-24;
+    }
+
+    .progressBar {
+      @apply mx-auto max-w-820 w-full;
+    }
+  }
+}

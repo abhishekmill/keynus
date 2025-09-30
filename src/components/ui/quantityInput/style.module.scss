@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex items-center gap-16;
+
+  .label {
+    @apply hidden tablet:block;
+  }
+
+  .value {
+    @apply border w-46 text-center py-12 rounded;
+  }
+}

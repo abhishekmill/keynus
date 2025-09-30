@@ -1,0 +1,37 @@
+.wrapper {
+  @apply space-y-44;
+
+  .formSection {
+    .heading {
+      @apply text-18 mb-16;
+    }
+
+    .formElementGroup {
+      @apply max-w-630 grid grid-cols-12 gap-12;
+
+      .formElement {
+        @apply w-full;
+
+        &.spanHalf {
+          @apply col-span-12 tablet:col-span-6;
+        }
+
+        &.spanFull {
+          @apply col-span-12;
+        }
+
+        &.spanSemi {
+          @apply col-span-12 tablet:col-span-4;
+        }
+
+        &.spanDoubleSemi {
+          @apply col-span-12 tablet:col-span-8;
+        }
+      }
+    }
+  }
+
+  .buttonWrapper {
+    @apply max-w-630 w-full flex justify-end;
+  }
+}

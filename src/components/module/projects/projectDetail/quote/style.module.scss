@@ -1,0 +1,114 @@
+.wrapper {
+  @apply bg-black text-white pt-40 pb-120 border-t-4 border-primary text-18;
+
+  .valuesList {
+    @apply flex justify-end pt-32;
+
+    .list {
+      @apply space-y-10 max-w-350 w-full font-medium;
+
+      .quoteItem {
+        @apply flex justify-between items-center tablet:gap-30;
+
+        .label {
+          @apply text-right col-span-4 font-normal;
+        }
+
+        .value {
+          @apply text-right whitespace-nowrap flex-none font-normal;
+        }
+      }
+
+      .divider {
+        @apply border border-gray w-full;
+      }
+
+      .subTotal {
+        @apply flex justify-between items-center tablet:gap-30 py-5;
+      }
+
+      .discountContent {
+        @apply flex justify-between items-center tablet:gap-30 py-8;
+
+        .label {
+          @apply font-normal;
+        }
+
+        .discountInputWrapper {
+          @apply flex items-center font-normal gap-2;
+
+          .discountInput {
+            @apply w-80 py-8;
+          }
+        }
+
+        .discountPrice {
+          @apply py-8 flex items-center gap-2 font-normal;
+        }
+      }
+
+      .totalContent {
+        @apply flex justify-between items-center tablet:gap-30 py-5;
+
+        .totalInput {
+          @apply py-8 max-w-120 w-full flex items-center gap-2 font-normal;
+        }
+      }
+
+      .vatContent {
+        @apply flex justify-between items-center tablet:gap-30 py-5;
+
+        .label {
+          @apply font-normal;
+        }
+
+        .discountInputWrapper {
+          @apply flex items-center font-normal gap-2;
+
+          .discountInput {
+            @apply w-80 py-8;
+          }
+        }
+
+        .subVatPrice {
+          @apply font-normal;
+        }
+      }
+
+      .totalPriceContent {
+        @apply flex justify-between items-center;
+      }
+    }
+  }
+  .dividerWrapper {
+    @apply mt-16 flex justify-end;
+
+    .divider {
+      @apply border border-gray max-w-300 w-full;
+    }
+  }
+
+  .sendQuote {
+    @apply flex flex-col items-end justify-end gap-16 mt-20 tablet:mt-60;
+
+    .email {
+      @apply text-white;
+    }
+
+    .buttonWrap {
+      @apply w-full flex items-center justify-between;
+    }
+
+    .sentWrapper {
+      @apply flex items-center gap-8;
+
+      .line {
+        @apply w-0.5 h-32 bg-darkGray;
+      }
+    }
+
+    .button {
+      @apply whitespace-nowrap min-w-fit;
+    }
+  }
+}

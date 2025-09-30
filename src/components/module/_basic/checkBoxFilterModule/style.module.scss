@@ -1,0 +1,51 @@
+.wrapper {
+  @apply text-16;
+
+  .label {
+    @apply w-full;
+  }
+
+  .currentStatus {
+    @apply text-darkGray pb-8;
+  }
+
+  .checkBoxes {
+    @apply space-y-8;
+
+    // Add checkbox input styling
+    input[type="checkbox"] {
+      border: 2px solid #d1d5db; // or whatever color you prefer
+      border-radius: 4px;
+
+      &:checked {
+        border: 2px solid #54ca70;
+      }
+
+      &:focus {
+        border: 1px solid #54ca70;
+      }
+    }
+
+    // Column layout when useColumns is true and there are more than 5 options
+    &.columnsLayout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px 32px;
+
+      // Reset space-y since we're using grid gap
+      > * {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+
+      // For larger screens, you can use 3 columns
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .moreButton {
+    @apply text-primary leading-18 border-b border-primary mt-20;
+  }
+}

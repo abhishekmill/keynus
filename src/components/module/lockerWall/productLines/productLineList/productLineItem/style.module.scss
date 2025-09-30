@@ -1,0 +1,59 @@
+.wrapper {
+  @apply w-full min-w-710 py-22;
+
+  .tHeader {
+    @apply bg-gray font-semibold w-full  grid grid-cols-8;
+
+    .th {
+      @apply px-48 p-12  whitespace-nowrap;
+
+      &.span1 {
+        @apply col-span-1;
+      }
+      &.span2 {
+        @apply col-span-2;
+      }
+      &.span3 {
+        @apply col-span-2;
+      }
+      &.span4 {
+        @apply col-span-4;
+      }
+    }
+  }
+  .icon {
+    @apply w-35 h-35;
+  }
+  .heading {
+    @apply px-60 py-16 font-bold text-[22px];
+  }
+
+  .tr {
+    @apply grid grid-cols-8 border-b border-gray w-full text-left outline-none right-0 hover:bg-[#f7f7f7];
+    .td {
+      @apply px-60 py-16 whitespace-normal break-words;
+
+      &.span1 {
+        @apply col-span-1 whitespace-normal break-words whitespace-nowrap;
+      }
+      &.span2 {
+        @apply col-span-2;
+      }
+      &.span3 {
+        @apply col-span-2;
+      }
+      &.span4 {
+        @apply col-span-4;
+      }
+    }
+  }
+}
+
+.blankDataWrapper {
+  @apply text-center h-full flex items-center justify-center text-24;
+  height: calc(100vh - 450px);
+
+  .message {
+    @apply max-w-400;
+  }
+}

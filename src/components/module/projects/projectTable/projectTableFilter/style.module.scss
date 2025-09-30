@@ -1,0 +1,19 @@
+.filterWrapper {
+  @apply flex flex-wrap tablet:flex-nowrap items-center justify-between pb-24 gap-16 tablet:gap-60;
+
+  .dropdowns {
+    @apply grid grid-cols-2 tablet:grid-cols-4 w-full gap-16 items-center;
+
+    .selector {
+      @apply w-full;
+    }
+
+    .refresh {
+      @apply w-[39px] h-[39px];
+    }
+  }
+
+  .archiveBtn {
+    @apply w-[39px] h-[39px];
+  }
+}

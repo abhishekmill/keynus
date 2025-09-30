@@ -1,0 +1,35 @@
+.wrapper {
+  @apply overflow-hidden relative border border-gray rounded-md pt-20 pb-8 px-16;
+
+  &.error {
+    @apply border-danger;
+
+    .label {
+      @apply text-danger;
+    }
+
+    .input {
+      @apply text-danger;
+    }
+  }
+
+  &.icon {
+    @apply pr-38;
+  }
+
+  .label {
+    @apply absolute top-6 left-16 text-12 text-darkGray;
+  }
+
+  .input {
+    @apply focus:ring-0 focus:outline-none h-22 w-full text-16 bg-transparent;
+  }
+
+  .icon {
+    @apply w-24 h-24 absolute top-1/2 -translate-y-1/2 right-10 text-darkGray;
+  }
+}
+
+.error {
+  @apply text-danger text-12;
+}

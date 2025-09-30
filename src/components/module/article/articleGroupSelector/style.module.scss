@@ -1,0 +1,7 @@
+.wrapper {
+  @apply pb-16 border-b border-gray;
+
+  .item {
+    @apply p-8 w-240;
+  }
+}

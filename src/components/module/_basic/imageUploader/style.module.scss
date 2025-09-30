@@ -1,0 +1,31 @@
+.wrapper {
+  @apply relative w-full p-6 min-h-180 border border-darkGray border-dashed rounded-lg flex items-center justify-center;
+
+  .image {
+    @apply object-cover;
+  }
+
+  .content {
+    @apply relative flex flex-col items-center z-10;
+
+    .input {
+      @apply sr-only;
+    }
+
+    .button {
+      @apply w-full min-w-180;
+    }
+
+    .label {
+      @apply text-darkGray text-14 absolute -bottom-32 whitespace-nowrap;
+    }
+
+    .error {
+      @apply text-danger text-14 absolute -bottom-48 whitespace-nowrap;
+    }
+  }
+
+  .actions {
+    @apply absolute right-8 top-8 flex gap-8;
+  }
+}

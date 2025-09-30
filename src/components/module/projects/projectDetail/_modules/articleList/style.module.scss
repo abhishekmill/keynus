@@ -1,0 +1,55 @@
+.wrapper {
+  @apply w-full;
+
+  .tableWrapper {
+    @apply py-30 px-16;
+
+    .table {
+      @apply w-full min-w-970;
+
+      .head {
+        @apply grid grid-cols-12 gap-16 font-bold text-14;
+
+        .article {
+          @apply col-span-3 whitespace-nowrap truncate pr-40;
+        }
+
+        .color {
+          @apply col-span-1 whitespace-nowrap truncate pr-40;
+        }
+
+        .amount {
+          @apply col-span-1 whitespace-nowrap truncate;
+        }
+
+        .price {
+          @apply col-span-2 flex items-center gap-2;
+        }
+
+        .discount {
+          @apply col-span-1 flex items-center gap-2;
+        }
+
+        .netPrice {
+          @apply col-span-2 flex items-center gap-2;
+        }
+
+        .subTotal {
+          @apply col-span-2 whitespace-nowrap truncate text-right mr-40;
+        }
+      }
+
+      .body {
+        @apply mt-16 text-16;
+      }
+
+      .total {
+        @apply mt-4;
+
+        .subTotal {
+          @apply border-t-2 pt-20 border-gray text-18;
+        }
+      }
+    }
+  }
+}

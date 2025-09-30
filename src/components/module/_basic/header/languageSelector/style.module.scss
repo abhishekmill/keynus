@@ -1,0 +1,31 @@
+.actionButton {
+  @apply w-40 h-40 bg-white rounded-full text-black flex items-center justify-center;
+
+  .icon {
+    @apply w-24 relative flex items-center justify-center;
+
+    .flag {
+      @apply w-30 h-auto;
+    }
+  }
+}
+
+.popUp {
+  @apply bg-white w-160 max-h-220 overflow-auto text-darkGray p-12;
+
+  .heading {
+    @apply pb-16 border-b border-gray px-8;
+  }
+
+  .selectorItem {
+    @apply w-full p-8 rounded flex items-center gap-16 hover:bg-primary hover:text-white h-fit focus:ring-0 focus:outline-none;
+
+    .flagWrapper {
+      @apply h-fit w-34 relative;
+
+      .image {
+        @apply object-fill rounded;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.dialog {
+  @apply relative transform w-180 h-180 rounded-full bg-transparent align-middle -translate-x-1/2 -translate-y-1/2 z-10;
+
+  .button {
+    @apply absolute shadow-lg text-white p-8 rounded-full w-50 h-50 z-10 ring-0 outline-none;
+
+    &.top {
+      @apply -top-30 left-1/2 -translate-x-1/2 bg-danger;
+    }
+
+    &.topLeft {
+      @apply -top-5 left-23 -translate-x-1/2 bg-primary;
+    }
+
+    &.left {
+      @apply -left-30 top-1/2 -translate-y-1/2 bg-secondary;
+    }
+
+    &.bottomLeft {
+      @apply -bottom-28 left-0 -translate-y-1/2 bg-tertiary;
+    }
+
+    &.bottom {
+      @apply -bottom-30 left-1/2 -translate-x-1/2 bg-primary;
+    }
+
+    &.bottomRight {
+      @apply bottom-0 -right-28 -translate-x-1/2 bg-tertiary;
+    }
+
+    &.right {
+      @apply -right-30 top-1/2 -translate-y-1/2 bg-secondary;
+    }
+
+    &.topRight {
+      @apply top-23 -right-5 -translate-y-1/2 bg-primary;
+    }
+
+    .icon {
+      @apply absolute w-24 h-24 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+  }
+
+  .ring {
+    @apply absolute inset-0 ring-8 rounded-full;
+  }
+}

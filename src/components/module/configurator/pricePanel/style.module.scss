@@ -1,0 +1,41 @@
+.wrapper {
+  @apply absolute bottom-24 left-8 p-24 bg-white rounded shadow-lg z-30 min-w-240;
+
+  .total {
+    @apply flex items-center justify-between pt-6;
+
+    .price {
+      @apply text-24 font-bold;
+    }
+  }
+
+  .expandPanel {
+    .list {
+      @apply space-y-8 py-12  border-b border-gray;
+
+      .listItem {
+        @apply flex items-center justify-between;
+
+        .label {
+          @apply w-130 truncate;
+        }
+      }
+    }
+  }
+
+  .expandButton {
+    @apply absolute top-10 right-38 text-black;
+
+    .icon {
+      @apply h-20 w-20 text-darkGray;
+    }
+  }
+
+  .closeButton {
+    @apply absolute top-8 right-8 text-black;
+
+    .icon {
+      @apply h-24 w-24 text-darkGray;
+    }
+  }
+}

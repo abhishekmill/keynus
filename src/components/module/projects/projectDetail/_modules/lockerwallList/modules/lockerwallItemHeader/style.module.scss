@@ -1,0 +1,39 @@
+.wrapper {
+  @apply relative grid grid-cols-4 tablet:grid-cols-7 desktop:grid-cols-12 gap-28 items-center w-full min-w-full desktop:min-w-970 py-16;
+
+  .previewWrapper {
+    @apply col-span-2 relative w-full h-90 border rounded-md border-gray;
+
+    .image {
+      @apply object-cover w-full h-full;
+    }
+  }
+
+  .nameWrapper {
+    @apply col-span-3 text-left text-18 tablet:text-20 capitalize font-medium;
+  }
+
+  .locationWrapper {
+    @apply col-span-3 text-left;
+  }
+
+  .amountWrapper {
+    @apply col-span-2 text-left;
+  }
+
+  .priceWrapper {
+    @apply col-span-2 text-left w-full text-16 tablet:text-20 font-medium pr-32;
+  }
+
+  .chevronIcon {
+    @apply absolute right-8 -rotate-90 transition-all duration-150;
+
+    &.open {
+      @apply rotate-0;
+    }
+
+    .icon {
+      @apply w-24 h-24;
+    }
+  }
+}

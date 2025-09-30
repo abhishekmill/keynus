@@ -1,0 +1,27 @@
+.wrapper {
+  @apply absolute z-20 left-12 top-180 max-w-180 w-full bg-white shadow-xl rounded-lg p-16;
+
+  .heading {
+    @apply text-left text-12 pb-16 font-bold;
+  }
+
+  .toggleItem {
+    @apply flex items-center gap-16;
+
+    .switchStyle {
+      @apply m-6;
+    }
+
+    .noLabel {
+      @apply w-40;
+    }
+  }
+
+  .radios {
+    @apply mt-16 space-y-8;
+
+    label {
+      @apply text-12 pt-4;
+    }
+  }
+}

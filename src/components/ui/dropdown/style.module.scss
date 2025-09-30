@@ -1,0 +1,15 @@
+.wrapper {
+  @apply relative inline-block text-left z-50;
+
+  .menuItems {
+    @apply overflow-hidden absolute right-0 mt-8 w-fit origin-top-right divide-y divide-gray rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none z-50;
+  }
+
+  .menuItem {
+    @apply px-16 py-8 w-full whitespace-nowrap truncate text-14 z-50;
+
+    &.active {
+      @apply bg-primary text-white;
+    }
+  }
+}

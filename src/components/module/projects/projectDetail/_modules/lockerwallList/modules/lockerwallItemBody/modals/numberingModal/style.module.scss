@@ -1,0 +1,41 @@
+.wrapper {
+  .heading {
+    @apply text-20;
+  }
+
+  .body {
+    @apply mt-20 space-y-30;
+
+    .boxWrapper {
+      @apply flex flex-col gap-10;
+
+      .selector {
+        @apply w-300 #{!important};
+      }
+    }
+
+    .direction {
+      @apply flex flex-col tablet:flex-row gap-20;
+    }
+
+    .numberInput {
+      @apply flex items-center gap-20 mt-16;
+
+      .input {
+        @apply border border-gray rounded py-8 px-16 focus:ring-0 focus:outline-none;
+      }
+    }
+
+    .smartyInput {
+      @apply flex items-center gap-20 mt-16;
+    }
+  }
+
+  .buttonWrapper {
+    @apply mt-20 flex justify-end;
+
+    .button {
+      @apply w-120;
+    }
+  }
+}

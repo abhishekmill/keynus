@@ -1,0 +1,9 @@
+.wrapper {
+  .table {
+    @apply overflow-x-auto;
+  }
+
+  .pagination {
+    @apply mt-24 relative;
+  }
+}

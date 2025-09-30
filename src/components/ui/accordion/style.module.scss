@@ -1,0 +1,29 @@
+.accordion {
+  @apply border border-gray mt-16;
+}
+
+.itemBtn {
+  @apply cursor-pointer flex items-center w-full m-0 py-6 text-16 text-left bg-transparent border-none font-bold;
+}
+
+.itemContent {
+  transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.itemPanel {
+  @apply py-10;
+}
+
+.chevron {
+  @apply ml-auto;
+
+  transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.itemBtnExpanded .chevron {
+  @apply rotate-180;
+}
+
+.chevron {
+  @apply w-20 h-20;
+}

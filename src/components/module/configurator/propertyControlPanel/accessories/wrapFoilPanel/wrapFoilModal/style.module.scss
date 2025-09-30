@@ -1,0 +1,23 @@
+.wrapper {
+  @apply px-8;
+
+  .heading {
+    @apply text-left text-18 font-semibold;
+  }
+
+  .uploader {
+    @apply mt-10;
+  }
+
+  .description {
+    @apply pt-20 pb-20;
+  }
+
+  .actionWrapper {
+    @apply flex items-center justify-between mt-30;
+
+    .price {
+      @apply text-24 font-bold;
+    }
+  }
+}

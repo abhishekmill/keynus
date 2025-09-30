@@ -1,0 +1,27 @@
+.wrapper {
+  @apply py-20 space-y-20;
+
+  .title {
+    @apply text-18 font-medium;
+  }
+
+  .dataContent {
+    @apply space-y-5 mt-20;
+
+    .item {
+      @apply w-full px-20;
+
+      &:nth-child(2n) {
+        @apply bg-gray py-2;
+      }
+
+      .link {
+        @apply text-primary text-18 flex gap-5 items-center;
+
+        .icon {
+          @apply w-18 h-18 text-primary;
+        }
+      }
+    }
+  }
+}

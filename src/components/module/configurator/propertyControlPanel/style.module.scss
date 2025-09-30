@@ -1,0 +1,33 @@
+.wrapper {
+  @apply fixed z-20 right-48 top-1/2 -translate-y-1/2 max-w-300 max-h-screen h-full w-full bg-white shadow-xl pt-170 translate-x-full transition-all duration-300;
+
+  .hideButton {
+    @apply w-40 h-40 bg-primary rounded-full absolute left-0 -translate-x-1/2 top-1/2;
+
+    &:disabled {
+      @apply bg-gray cursor-not-allowed;
+    }
+
+    .icon {
+      @apply text-white w-30 h-30 -rotate-90 absolute left-3 top-6 transition-all duration-300;
+    }
+  }
+
+  &.open {
+    @apply translate-x-0 right-0;
+
+    .hideButton {
+      .icon {
+        @apply rotate-90 absolute left-7 top-6;
+      }
+    }
+  }
+
+  .content {
+    @apply w-full h-full overflow-hidden pl-24 pb-24;
+
+    .placeholderMessageWrapper {
+      @apply h-full flex items-center justify-center;
+    }
+  }
+}

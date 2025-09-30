@@ -1,0 +1,23 @@
+.wrapper {
+  @apply border border-gray rounded-md px-16 pt-20 pb-8 relative;
+
+  &.error {
+    @apply border-danger;
+
+    .label {
+      @apply text-danger;
+    }
+  }
+
+  .label {
+    @apply absolute top-6 text-darkGray text-12;
+  }
+
+  .textarea {
+    @apply w-full focus:ring-0 focus:outline-none text-16 text-black;
+  }
+}
+
+.error {
+  @apply text-danger text-12;
+}

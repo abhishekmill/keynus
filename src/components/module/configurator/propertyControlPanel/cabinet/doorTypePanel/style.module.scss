@@ -1,0 +1,7 @@
+.wrapper {
+  @apply w-full space-y-8;
+
+  .item {
+    @apply flex items-center gap-24;
+  }
+}

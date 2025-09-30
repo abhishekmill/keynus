@@ -1,0 +1,23 @@
+.wrapper {
+  @apply px-16 py-24;
+
+  .actionsWrapper {
+    @apply flex flex-wrap items-center gap-12 mt-20;
+
+    .buttons {
+      @apply flex items-center gap-8 tablet:gap-12;
+
+      .editButton {
+        @apply min-w-50 h-53;
+      }
+    }
+
+    .trashWrapper {
+      @apply pl-12 border-l-2 border-gray;
+
+      .trashButton {
+        @apply bg-danger;
+      }
+    }
+  }
+}

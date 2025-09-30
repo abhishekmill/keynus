@@ -1,0 +1,19 @@
+.wrapper {
+  @apply w-220 p-12 flex flex-col items-center gap-12;
+
+  .radioWrapper {
+    @apply w-full space-y-6 px-12;
+  }
+
+  .viewControl {
+    @apply pt-12;
+
+    .label {
+      @apply whitespace-nowrap truncate text-center;
+    }
+
+    .controlWrapper {
+      @apply flex items-center gap-24;
+    }
+  }
+}

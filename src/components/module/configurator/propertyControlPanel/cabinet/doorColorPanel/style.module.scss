@@ -1,0 +1,11 @@
+.wrapper {
+  @apply w-full space-y-16;
+
+  .item {
+    @apply flex items-center gap-36;
+
+    .number {
+      @apply flex-none;
+    }
+  }
+}

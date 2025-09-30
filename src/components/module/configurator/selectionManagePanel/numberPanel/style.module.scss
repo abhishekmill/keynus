@@ -1,0 +1,11 @@
+.numberPanel {
+  @apply absolute left-0 -bottom-12 shadow-xl rounded-lg p-16 bg-white translate-y-full space-y-8;
+
+  .item {
+    @apply flex items-center;
+
+    .label {
+      @apply w-80;
+    }
+  }
+}

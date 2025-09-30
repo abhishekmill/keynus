@@ -1,0 +1,75 @@
+.lockerControllerWrapper {
+  @apply absolute left-0 block flex-none py-40 bg-white z-20 w-screen h-full;
+
+  @screen tablet {
+    @apply w-380 static z-10;
+  }
+
+  .content {
+    @apply sticky top-0;
+
+    .heading {
+      @apply text-24 text-center tablet:text-left;
+    }
+
+    .description {
+      @apply text-14 text-center tablet:text-left;
+    }
+
+    .formWrapper {
+      @apply space-y-16 mt-18 max-w-320 mx-auto tablet:mx-0;
+    }
+
+    .headingDimension {
+      @apply text-16 mt-48 text-center tablet:text-left;
+    }
+  }
+}
+
+.lockerViewWrapper {
+  @apply w-full h-full p-16 flex items-center justify-center;
+
+  .content {
+    @apply w-full;
+
+    .viewWrapper {
+      @apply grid grid-cols-1 tablet:grid-cols-2 gap-24 min-h-360;
+
+      .propertyWrapper {
+        @apply max-w-240;
+
+        .heading {
+          @apply text-16;
+        }
+
+        .properties {
+          @apply space-y-16 mt-32 overflow-y-auto pr-5 h-450;
+
+          .property {
+            @apply border border-gray rounded p-8;
+
+            .label {
+              @apply text-12;
+            }
+
+            .value {
+              @apply text-16;
+            }
+          }
+        }
+      }
+
+      .previewWrapper {
+        @apply relative;
+      }
+    }
+
+    .buttonWrapper {
+      @apply flex justify-end mt-32;
+
+      .button {
+        @apply py-12 px-16;
+      }
+    }
+  }
+}

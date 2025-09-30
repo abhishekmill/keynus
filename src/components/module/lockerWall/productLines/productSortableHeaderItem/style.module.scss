@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-full flex items-center gap-20;
+
+  .sortButton {
+    @apply w-20 h-20;
+
+    .icon {
+      @apply w-18 h-18 transition-all duration-300;
+
+      &.up {
+        @apply rotate-180;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-fit flex items-center gap-6;
+
+  .link {
+    @apply flex items-center gap-6 text-darkGray text-14 hover:text-black transition-all duration-300;
+
+    &.active {
+      @apply text-black;
+    }
+
+    .arrow {
+      @apply w-18 h-18;
+    }
+  }
+}

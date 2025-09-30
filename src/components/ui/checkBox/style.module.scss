@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex items-center gap-10 relative;
+
+  .checkbox {
+    @apply appearance-none w-20 h-20 border border-gray rounded-sm cursor-pointer;
+
+    &:checked {
+      @apply bg-primary border-primary;
+    }
+  }
+
+  .checkMark {
+    @apply pointer-events-none w-12 h-7 border-white border-l-2 border-b-2 -rotate-45 absolute left-4 top-7;
+  }
+
+  .label {
+    @apply cursor-pointer;
+  }
+}

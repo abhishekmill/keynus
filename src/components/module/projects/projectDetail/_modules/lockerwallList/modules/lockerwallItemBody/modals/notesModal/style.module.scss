@@ -1,0 +1,27 @@
+.wrapper {
+  @apply space-y-40;
+
+  .heading {
+    @apply text-20;
+  }
+
+  .inputWrapper {
+    @apply space-y-10;
+
+    .input {
+      @apply w-full tablet:max-w-200;
+    }
+  }
+
+  .textWrapper {
+    @apply space-y-10;
+  }
+
+  .buttonWrapper {
+    @apply mt-20 flex justify-end;
+
+    .button {
+      @apply w-200;
+    }
+  }
+}

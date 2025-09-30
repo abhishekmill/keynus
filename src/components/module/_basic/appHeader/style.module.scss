@@ -1,0 +1,39 @@
+.wrapper {
+  @apply w-full sticky top-70 inset-x-0 py-12 shadow-lg bg-white z-[39] px-28 large:px-0;
+
+  .content {
+    @apply w-full relative block tablet:flex flex-wrap items-center justify-between gap-0 tablet:gap-12;
+
+    .backButtonWrapper {
+      @apply flex items-start justify-between gap-30 relative;
+
+      .backButton {
+        @apply flex-none text-18 tablet:text-24 flex items-center gap-16;
+
+        .button {
+          @apply w-fit whitespace-nowrap truncate absolute -left-8 -translate-x-full;
+
+          .icon {
+            @apply w-24 h-24;
+          }
+        }
+      }
+    }
+
+    .breadcrumb {
+      @apply mt-6 tablet:mt-0;
+    }
+
+    .actions {
+      @apply flex flex-wrap items-center gap-12 mt-8 tablet:mt-0;
+
+      .button {
+        @apply py-14 whitespace-nowrap truncate;
+      }
+
+      .search {
+        @apply flex-1 w-full;
+      }
+    }
+  }
+}

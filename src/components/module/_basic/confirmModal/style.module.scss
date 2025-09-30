@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-full text-center space-y-16;
+
+  .heading {
+    @apply text-18 font-semibold;
+  }
+
+  .actionWrapper {
+    @apply flex items-center justify-center gap-10;
+
+    .button {
+      @apply w-120;
+    }
+  }
+}

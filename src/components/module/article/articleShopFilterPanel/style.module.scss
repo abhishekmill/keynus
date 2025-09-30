@@ -1,0 +1,7 @@
+.wrapper {
+  @apply w-full px-16 py-32 space-y-16 overflow-auto;
+
+  .options {
+    @apply grid grid-cols-2 gap-8 tablet:grid-cols-1 tablet:gap-16;
+  }
+}

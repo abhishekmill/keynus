@@ -1,0 +1,24 @@
+.wrapper {
+  @apply w-full h-full flex flex-col justify-between;
+
+  .content {
+    @apply w-full relative flex-1 h-4/5 block tablet:flex items-start justify-between;
+
+    .filterWrapper {
+      @apply w-full tablet:w-300 tablet:flex-none;
+    }
+
+    // New tableWrapper replaces listWrapper
+    .tableWrapper {
+      @apply w-full h-full mt-40 px-16; // matches page padding
+    }
+
+    .tableContent {
+      @apply w-full min-h-[400px]; // prevents layout jump between pages
+    }
+
+    .noResults {
+      @apply text-24 font-medium text-center py-32;
+    }
+  }
+}

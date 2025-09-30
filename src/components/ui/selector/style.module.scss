@@ -1,0 +1,67 @@
+.wrapper {
+  @apply w-full relative;
+
+  &.disabled {
+    @apply text-gray;
+  }
+
+  .content {
+    @apply relative mt-1;
+
+    .selectorLabel {
+      @apply absolute top-6 left-16 text-12 text-darkGray;
+
+      &.error {
+        @apply text-danger;
+      }
+
+      &.disabled {
+        @apply text-gray;
+      }
+    }
+
+    .button {
+      @apply relative w-full cursor-default pb-8 pt-8 pl-16 pr-32 text-left border border-gray rounded-md;
+
+      .label {
+        @apply block truncate text-16 text-black;
+
+        &.disabled {
+          @apply text-gray;
+        }
+      }
+
+      &.hasLabel {
+        @apply pt-20;
+      }
+
+      &.error {
+        @apply border-danger text-danger;
+
+        .label {
+          @apply text-danger;
+        }
+      }
+
+      .iconWrapper {
+        @apply pointer-events-none absolute inset-y-0 right-0 flex items-center pr-6;
+
+        .icon {
+          @apply w-16 h-16 mr-6;
+        }
+      }
+    }
+
+    .options {
+      @apply z-20 absolute mt-1 max-h-200 w-full overflow-auto rounded-md bg-white py-4 shadow-lg border border-gray;
+
+      .option {
+        @apply relative cursor-default select-none py-8 px-16;
+      }
+    }
+  }
+
+  .error {
+    @apply text-danger text-12;
+  }
+}

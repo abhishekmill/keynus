@@ -1,0 +1,27 @@
+.wrapper {
+  @apply bg-white px-32 py-72 rounded-lg h-full min-h-520 flex flex-col justify-between relative;
+
+  .logoWrapper {
+    @apply tablet:hidden flex items-center justify-center;
+  }
+
+  .heading {
+    @apply text-primary text-32 font-medium text-center tablet:text-left;
+  }
+
+  .forgotPasswordWrapper {
+    @apply flex justify-end mt-8 text-16 text-darkGray;
+  }
+
+  .button {
+    @apply w-full text-center;
+
+    button {
+      @apply w-full;
+    }
+  }
+
+  .alert {
+    @apply absolute left-0 -bottom-16 translate-y-full;
+  }
+}

@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "rc-tooltip/assets/bootstrap_white.css";
+@import "react-toastify/dist/ReactToastify.css";
+@import "react-loading-skeleton/dist/skeleton.css";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+html {
+  font-size: 12px;
+}
+
+.multi-range-slider,
+.multi-range-slider .bar-left,
+.multi-range-slider .bar-right,
+.multi-range-slider .bar-inner,
+.multi-range-slider .thumb::before {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.multi-range-slider .thumb .caption * {
+  background-color: #54ca70 !important;
+}
+
+.szh-accordion__item-btn {
+  @apply w-full focus:outline-none focus:ring-0;
+}
+
+.szh-accordion__item-heading {
+  @apply leading-[0px] my-0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #d9d9d9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #545455;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #545455ee;
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

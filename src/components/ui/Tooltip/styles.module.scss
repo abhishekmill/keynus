@@ -1,0 +1,15 @@
+.tooltipContainer {
+  @apply relative flex flex-col items-center justify-center max-w-max;
+
+  .wrapper {
+    @apply absolute py-2 text-14 font-medium transition-all duration-500 transform scale-0 rounded-lg min-w-max;
+
+    .body {
+      @apply relative flex flex-col items-center max-w-xs rounded shadow-lg border border-gray;
+
+      .messageWrapper {
+        @apply px-20 py-3.5 text-16 rounded bg-white;
+      }
+    }
+  }
+}

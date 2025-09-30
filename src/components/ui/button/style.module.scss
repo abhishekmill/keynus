@@ -1,0 +1,75 @@
+.wrapper {
+  @apply flex items-center justify-center gap-6 px-12 py-14 rounded-md transition-all duration-300 ease-in-out uppercase whitespace-normal truncate;
+
+  &.disabled {
+    @apply cursor-not-allowed bg-gray text-darkGray #{!important};
+  }
+
+  &.outline {
+    @apply border;
+
+    &.primary {
+      @apply border-primary text-primary;
+    }
+
+    &.secondary {
+      @apply border-secondary text-secondary;
+    }
+
+    &.tertiary {
+      @apply border-tertiary text-tertiary;
+    }
+
+    &.danger {
+      @apply border-danger text-danger;
+    }
+
+    &.lightDanger {
+      @apply border-lightDanger text-lightDanger;
+    }
+  }
+
+  &.solid {
+    @apply border-none outline-none;
+
+    &.primary {
+      @apply bg-primary border-primary text-white;
+    }
+
+    &.secondary {
+      @apply bg-secondary border-secondary text-white;
+    }
+
+    &.tertiary {
+      @apply bg-tertiary border-tertiary text-white;
+    }
+
+    &.danger {
+      @apply bg-danger border-danger text-white;
+    }
+
+    &.lightDanger {
+      @apply border-lightDanger bg-lightDanger text-white;
+    }
+
+    &:hover {
+      @apply bg-opacity-70;
+    }
+  }
+
+  .icon {
+    @apply w-22 h-22 flex-none;
+  }
+
+  .hideOnMobile {
+    @apply hidden phoneLandscape:block;
+  }
+
+  span {
+    @apply h-20;
+  }
+}
+
+.error {
+  @apply text-14 text-danger mt-4;
+}

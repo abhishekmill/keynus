@@ -1,0 +1,27 @@
+.wrapper {
+  @apply flex items-center justify-start;
+
+  .input {
+    @apply flex-none bg-white outline outline-2 outline-offset-1 outline-primary appearance-none w-12 h-12 border-none rounded-full cursor-pointer;
+
+    &:checked {
+      @apply bg-primary;
+    }
+
+    &:disabled {
+      @apply bg-gray outline-gray cursor-not-allowed transition-colors duration-300 ease-in-out;
+    }
+  }
+
+  .label {
+    @apply cursor-pointer pl-24;
+
+    &.disabled {
+      @apply text-gray transition-colors duration-300 ease-in-out;
+    }
+  }
+
+  .value {
+    @apply text-black flex-1 cursor-pointer;
+  }
+}

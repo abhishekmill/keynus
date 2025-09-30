@@ -1,0 +1,35 @@
+.wrapper {
+  @apply bg-white px-32 py-72 rounded-lg h-full min-h-520 flex flex-col justify-between relative;
+
+  .heading {
+    @apply text-primary text-32 font-medium;
+  }
+
+  .forgotPasswordWrapper {
+    @apply flex justify-end mt-8 text-16 text-darkGray;
+  }
+
+  .button {
+    @apply w-full text-center;
+
+    button {
+      @apply w-full;
+    }
+  }
+
+  .alert {
+    @apply absolute left-0 -bottom-16 translate-y-full;
+  }
+}
+
+.waitingMessageWrapper {
+  @apply bg-white px-32 py-72 rounded-lg h-full min-h-520 flex flex-col justify-center relative text-center text-18;
+
+  .message {
+    @apply max-w-300 mx-auto;
+
+    .email {
+      @apply text-primary;
+    }
+  }
+}

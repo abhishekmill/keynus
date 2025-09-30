@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-180 py-12 px-15 flex flex-col gap-10;
+
+  .radioWrapper {
+    @apply w-full space-y-6 px-12;
+  }
+
+  .switchWrapper {
+    @apply flex items-center;
+  }
+
+  .button {
+    @apply w-full;
+  }
+}

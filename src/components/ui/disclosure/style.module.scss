@@ -1,0 +1,23 @@
+.button {
+  @apply w-full flex justify-between items-center bg-primary px-16 py-10 text-white rounded-sm text-20;
+
+  .titleWrapper {
+    @apply flex items-center gap-12;
+
+    .prefix {
+      @apply w-24 h-24;
+    }
+  }
+
+  .icon {
+    @apply w-20 h-20 text-white transition-all duration-300;
+
+    &.open {
+      @apply rotate-180;
+    }
+  }
+}
+
+.panel {
+  @apply w-full;
+}

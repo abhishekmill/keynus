@@ -1,0 +1,25 @@
+.wrapper {
+  .inputWrapper {
+    @apply flex items-center justify-between gap-30 pt-16;
+
+    .input {
+      @apply border border-gray rounded-sm text-center w-80 h-50 py-6 pl-16 pr-6 focus:outline-none focus:ring-0 text-18;
+    }
+
+    .line {
+      @apply w-full h-3 bg-gray;
+    }
+  }
+
+  .slider {
+    @apply mt-20;
+  }
+}
+
+.button {
+  @apply text-16 rounded-lg #{!important};
+}
+
+.panel {
+  @apply px-16 #{!important};
+}

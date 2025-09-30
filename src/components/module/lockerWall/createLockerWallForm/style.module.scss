@@ -1,0 +1,51 @@
+.wrapper {
+  @apply w-full h-full;
+
+  .content {
+    @apply w-full h-full space-y-24;
+
+    .element {
+      @apply max-w-400;
+
+      .label {
+        @apply text-16 text-black;
+      }
+
+      .formElement {
+        @apply mt-12;
+      }
+    }
+
+    .dropdownsElements {
+      @apply max-w-630;
+
+      .label {
+        @apply text-16 text-black;
+      }
+
+      .dropdowns {
+        @apply grid grid-cols-1 tablet:grid-cols-2 gap-24 items-center mt-12;
+      }
+    }
+
+    .textArea {
+      @apply max-w-630;
+
+      .label {
+        @apply text-16 text-black;
+      }
+
+      .formElement {
+        @apply mt-18;
+      }
+    }
+
+    .buttonWrapper {
+      @apply flex justify-end;
+
+      .button {
+        @apply py-10 px-16;
+      }
+    }
+  }
+}

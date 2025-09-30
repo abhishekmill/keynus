@@ -1,0 +1,39 @@
+.wrapper {
+  @apply relative z-40;
+
+  .content {
+    @apply fixed inset-0 overflow-y-auto;
+
+    .modalContent {
+      @apply flex min-h-full items-center justify-center p-4 text-center;
+
+      .panel {
+        @apply relative w-full transform overflow-hidden rounded-xl bg-white py-32 px-16 text-left align-middle shadow-xl transition-all;
+
+        &.sm {
+          @apply max-w-xs;
+        }
+
+        &.md {
+          @apply max-w-md;
+        }
+
+        &.lg {
+          @apply max-w-xl;
+        }
+
+        &.xl {
+          @apply max-w-4xl;
+        }
+
+        .closeButton {
+          @apply absolute right-12 top-16;
+
+          .icon {
+            @apply w-20 h-20 text-darkGray;
+          }
+        }
+      }
+    }
+  }
+}

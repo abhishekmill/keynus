@@ -1,0 +1,15 @@
+.wallsWrapper {
+  @apply divide-y-1 divide-gray;
+
+  .loadingContent {
+    @apply relative min-h-200;
+  }
+
+  .blankDataWrapper {
+    @apply flex items-center justify-center w-full py-40 text-24;
+
+    .message {
+      @apply max-w-400 text-center;
+    }
+  }
+}

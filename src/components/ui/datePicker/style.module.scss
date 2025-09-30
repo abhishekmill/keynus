@@ -1,0 +1,27 @@
+.wrapper {
+  @apply relative w-full;
+
+  .inputWrapper {
+    @apply w-full text-left border border-gray rounded-md pt-22 pb-8 px-16 h-54;
+
+    .value {
+      @apply text-black text-16;
+    }
+
+    .label {
+      @apply absolute top-6 left-16 text-12 text-darkGray;
+    }
+
+    &.error {
+      @apply border-danger text-danger;
+    }
+  }
+
+  .calendarWrapper {
+    @apply absolute z-40 mt-4;
+  }
+
+  .error {
+    @apply text-danger text-12;
+  }
+}

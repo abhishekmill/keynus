@@ -1,0 +1,27 @@
+.wrapper {
+  @apply fixed w-full h-fit top-70 left-0 right-0 z-30 bg-white py-12 border-b border-gray;
+
+  .containerWrapper {
+    @apply flex gap-24 items-center justify-start tablet:justify-between w-full h-fit;
+
+    .buttonGroup {
+      @apply flex items-center gap-16;
+
+      .itemButton {
+        @apply bg-primary px-12 py-14 rounded-lg flex items-center justify-center hover:bg-opacity-70 transition-all duration-300;
+
+        .icon {
+          @apply w-22 h-22 text-white;
+        }
+      }
+    }
+
+    .saveAction {
+      @apply flex items-center gap-16 divide-x-1 divide-gray;
+
+      .save {
+        @apply pl-16;
+      }
+    }
+  }
+}

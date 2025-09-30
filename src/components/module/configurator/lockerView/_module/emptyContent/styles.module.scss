@@ -1,0 +1,11 @@
+.emptyContent {
+  @apply w-full h-full flex flex-col items-center justify-center;
+
+  .emptyContentText {
+    @apply text-25 text-center text-black font-black py-2;
+  }
+
+  .selectColumnButton {
+    @apply mt-8;
+  }
+}

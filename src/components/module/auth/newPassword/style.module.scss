@@ -1,0 +1,27 @@
+.wrapper {
+  @apply bg-white px-32 py-72 rounded-lg h-full min-h-550 flex flex-col justify-between relative;
+
+  .heading {
+    @apply text-primary text-32 font-medium;
+  }
+
+  .inputWrapper {
+    @apply space-y-16 mt-32;
+  }
+
+  .forgotPasswordWrapper {
+    @apply flex justify-end mt-8 text-16 text-darkGray;
+  }
+
+  .button {
+    @apply w-full text-center;
+
+    button {
+      @apply w-full;
+    }
+  }
+
+  .alert {
+    @apply absolute left-0 -bottom-16 translate-y-full;
+  }
+}

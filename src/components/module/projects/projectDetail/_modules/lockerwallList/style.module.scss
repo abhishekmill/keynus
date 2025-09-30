@@ -1,0 +1,19 @@
+.wrapper {
+  @apply w-full;
+
+  .lockerwallTableHeader {
+    @apply hidden desktop:grid grid-cols-12 gap-16 tablet:gap-28 bg-gray py-16 min-w-full desktop:min-w-970;
+
+    .span2 {
+      @apply col-span-2 whitespace-nowrap w-full;
+    }
+
+    .span3 {
+      @apply col-span-3 whitespace-nowrap w-full;
+    }
+  }
+
+  .list {
+    @apply divide-y-2 divide-gray;
+  }
+}

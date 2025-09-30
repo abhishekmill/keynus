@@ -1,0 +1,63 @@
+.form {
+  @apply w-full p-20;
+
+  .heading {
+    @apply text-24;
+  }
+
+  .templateList {
+    @apply flex gap-20;
+
+    .spinner {
+      @apply my-30;
+    }
+  }
+
+  .desc {
+    @apply my-16 max-w-xl;
+  }
+
+  .templateBox {
+    @apply bg-[#494544] rounded-2xl w-130 h-130 my-30 flex justify-center items-center;
+
+    p {
+      @apply text-white text-center text-20  line-clamp-2;
+    }
+  }
+
+  .activeBox {
+    @apply border-3 border-primary;
+  }
+
+  .pageWrapper {
+    @apply divide-y-2 divide-gray max-w-xl;
+
+    .page {
+      @apply py-32 flex flex-col items-start gap-32 w-full;
+
+      .pageHeading {
+        @apply text-24 font-medium;
+      }
+
+      .formGroup {
+        @apply w-full flex flex-col gap-6;
+
+        .uploader {
+          @apply w-full;
+        }
+
+        .label {
+          @apply text-14;
+        }
+
+        .input {
+          @apply w-fit;
+        }
+      }
+    }
+  }
+
+  .submit {
+    @apply flex justify-end mt-20;
+  }
+}

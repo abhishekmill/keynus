@@ -1,0 +1,47 @@
+.wrapper {
+  @apply absolute left-0 flex-none bg-white z-20 w-screen h-full pb-46 translate-x-0 transition-all duration-300;
+
+  &.open {
+    @apply -translate-x-full transition-all duration-300;
+  }
+
+  @screen tablet {
+    @apply sticky max-w-300 z-10 top-180 pb-0;
+  }
+
+  .content {
+    @apply fixed top-0 h-[calc(100vh-140px)] overflow-auto w-full;
+
+    .headerWrapper {
+      @apply sticky top-0 bg-white z-60 flex items-center justify-between max-w-280 w-full;
+
+      .heading {
+        @apply font-medium text-18;
+      }
+
+      .clearButton {
+        @apply text-primary underline;
+
+        .icon {
+          @apply w-18 h-18 text-black;
+        }
+      }
+    }
+
+    .heading {
+      @apply text-16 text-center tablet:text-left;
+    }
+
+    .formWrapper {
+      @apply space-y-16 mt-18 max-w-280 mx-auto tablet:mx-0;
+    }
+
+    .headingDimension {
+      @apply text-16 mt-48 text-center tablet:text-left;
+    }
+  }
+}
+
+.filterButton {
+  @apply block tablet:hidden bg-primary rounded-full w-50 h-50 fixed top-130 left-0 z-50 text-white;
+}
